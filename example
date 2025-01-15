@@ -1,0 +1,32 @@
+loadstring(game:HttpGet(("https://raw.githubusercontent.com/SnoobG/Redz-Library/refs/heads/main/src")))()
+
+MakeWindow({
+  Hub = {
+    Title = "REDZLIB v4 i think",
+    Animation = "By : Snoobe"
+  },
+  Key = {
+    KeySystem = false,
+    }
+  }
+})
+
+MinimizeButton({
+  Image = "rbxassetid://",
+  Size = {55, 55},
+  Color = Color3.fromRGB(10, 10, 10),
+  Corner = true,
+  Stroke = false,
+  StrokeColor = Color3.fromRGB(255, 0, 0)
+})
+
+--farm
+local Main = MakeTab({Name = "Main"})
+local section = AddSection(Main, {"Test"})
+SetSection(section, "By Snoobe")
+AddButton(Main, {
+  Name = "test button",
+  Callback = function()
+  print("work !!")
+  end
+})
