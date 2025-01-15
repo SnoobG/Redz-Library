@@ -1,5 +1,4 @@
 loadstring(game:HttpGet(("https://raw.githubusercontent.com/SnoobG/Redz-Library/refs/heads/main/src")))()
-
 MakeWindow({
   Hub = {
     Title = "REDZLIB v4 i think",
