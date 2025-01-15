@@ -7,6 +7,15 @@ MakeWindow({
   },
   Key = {
     KeySystem = false,
+    Title = "ez HUB",
+    Description = "",
+    KeyLink = "e",
+    Keys = {"1"},
+    Notifi = {
+      Notifications = true,
+      CorrectKey = "Key is Correct wait(..)",
+      Incorrectkey = "The key is incorrect",
+      CopyKeyLink = "Copied to Clipboard"
     }
   }
 })
