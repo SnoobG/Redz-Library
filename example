@@ -19,7 +19,6 @@ MakeWindow({
     }
   }
 })
-
 MinimizeButton({
   Image = "rbxassetid://",
   Size = {55, 55},
@@ -29,12 +28,45 @@ MinimizeButton({
   StrokeColor = Color3.fromRGB(255, 0, 0)
 })
 
---farm
 local Main = MakeTab({Name = "Main"})
 local section = AddSection(Main, {"Test"})
 SetSection(section, "By Snoobe")
+
+-- Button
 AddButton(Main, {
   Name = "test button",
+  Callback = function()
+  print("work !!")
+  end
+})
+
+-- Toggle
+AddToggle(Main, {
+  Name = "test button",
+  local Default = false,
+  Callback = function()
+  print("work !!")
+  end
+})
+
+-- Slider
+AddSlider(Main, {
+  Name = "test button",
+  local Increase = 1,
+  local MinValue = 10,
+  local MaxValue = 100,
+  local Default = 25,
+  Callback = function()
+  print("work !!")
+  end
+})
+
+-- TextBox
+AddSlider(Main, {
+  Name = "test button",
+  local Default = 25,
+  local placeholderText = "TextBox",
+  local ClearText = false,
   Callback = function()
   print("work !!")
   end
